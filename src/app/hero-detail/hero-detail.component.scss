@@ -1,54 +1,47 @@
-/* HeroesComponent's private CSS styles */
-.heroes {
-  margin: 0 0 2em 0;
-  list-style-type: none;
-  padding: 0;
-  width: 15em;
-}
-.heroes li {
-  position: relative;
-  cursor: pointer;
-}
+/* HeroSearch private styles */
 
-.heroes li:hover {
-  left: .1em;
-}
-
-.heroes a {
-  color: #333;
-  text-decoration: none;
-  background-color: #EEE;
-  margin: .5em;
-  padding: .3em 0;
-  height: 1.6em;
-  border-radius: 4px;
+label {
   display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+
+}
+input {
+  padding: .5rem;
   width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  display: block;
 }
 
-.heroes a:hover {
-  color: #2c3a41;
-  background-color: #e6e6e6;
+input:focus {
+  outline: #336699 auto 1px;
 }
 
-.heroes a:active {
-  background-color: #525252;
-  color: #fafafa;
+li {
+  list-style-type: none;
 }
-
-.heroes .badge {
+.search-result li a {
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
   display: inline-block;
-  font-size: small;
+  width: 100%;
+  max-width: 600px;
+  padding: .5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+.search-result li a:hover {
+  background-color: #435A60;
   color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color:#405061;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
-  height: 1.8em;
-  min-width: 16px;
-  text-align: right;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
+}
+
+ul.search-result {
+  margin-top: 0;
+  padding-left: 0;
 }
